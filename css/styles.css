@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.32px;
   color: var(--SLATE);
   background-color: var(--WHITE);
@@ -29,7 +29,7 @@ a {
 
 .web {
   color: var(--IRIS);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -41,18 +41,18 @@ a {
   color: var(--NAVYBLUE);
 }
 
-.list-item-nav > a {
+.list-item-nav {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   color: var(--NAVYBLUE);
 }
 
-.list-item-nav > a:focus {
+.list-item-nav:focus {
   color: var(--OCEAN);
 }
 
-.list-item-nav > a:hover {
+.list-item-nav:hover {
   color: var(--OCEAN);
 }
 
@@ -97,6 +97,7 @@ a {
   letter-spacing: 0.04em;
   background: var(--IRIS, #4d5ae5);
   color: var(--WHITE);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -149,7 +150,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.position {
+.positionn {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
