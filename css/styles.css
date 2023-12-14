@@ -5,13 +5,14 @@
   --NAVYBLUE: #2e2f42;
   --SLATE: #434455;
   --WHITE: #ffffff;
+  --OCEAN: #404bbf;
 }
 
 body {
   font-family: "Roboto" sans-serif;
   letter-spacing: 0.32px;
   color: var(--SLATE);
-  width: 1440px;
+  background-color: var(--WHITE);
 }
 
 ul {
@@ -23,35 +24,56 @@ a {
 }
 
 .head {
-  border-bottom: 1px solid var(--CORNFLOWER);
   background: var(--WHITE);
 }
 
 .web {
-  color: var(--IRIS, #4d5ae5);
-  font-family: Raleway;
+  color: var(--IRIS);
+  font-family: "Raleway";
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
 .studio {
-  color: var(--NAVY-BLUE, #2e2f42);
-}
-
-.list-item {
-  font-size: 16px;
-  font-weight: 500;
   color: var(--NAVYBLUE);
 }
 
-.addres-item {
+.list-item-nav > a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--NAVYBLUE);
+}
+
+.list-item-nav > a:focus {
+  color: var(--OCEAN);
+}
+
+.list-item-nav > a:hover {
+  color: var(--OCEAN);
+}
+
+.adedres {
   font-style: normal;
+}
+
+.addres-item {
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
   color: var(--SLATE);
+}
+
+.addres-item:hover {
+  color: var(--OCEAN);
+}
+
+.addres-item:focus {
+  color: var(--OCEAN);
 }
 
 .hiro {
@@ -60,23 +82,30 @@ a {
 }
 
 .titel {
+  text-align: center;
   color: var(--WHITE);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  margin-top: 0;
 }
 
 .button {
-  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background: var(--IRIS, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--WHITE);
 }
 
-.button:focus:hover {
+.button:hover {
   cursor: pointer;
+  background-color: var(--OCEAN);
+}
+
+.button:focus {
+  background-color: var(--OCEAN);
 }
 
 .title-list {
@@ -98,28 +127,26 @@ a {
 }
 
 .title-team {
-  color: var(--NAVY-BLUE);
+  color: var(--NAVYBLUE);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
 .team-list-item {
   background-color: var(--WHITE);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
-  color: var(--NAVY-BLUE);
+  color: var(--NAVYBLUE);
   text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .position {
@@ -129,16 +156,17 @@ a {
 }
 
 .portfolio {
-  color: var(--NAVY-BLUE);
+  color: var(--NAVYBLUE);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
 .portfolio-title {
-  color: var(--NAVY-BLUE);
+  color: var(--NAVYBLUE);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -161,4 +189,5 @@ a {
 
 .info {
   color: var(--CLOUD);
+  line-height: 1.5;
 }
